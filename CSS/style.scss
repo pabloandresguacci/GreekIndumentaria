@@ -1,0 +1,277 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.header__h1--animacion {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-name: aparecer;
+  animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+.header--widht {
+  width: 100%;
+  background-color: #343a40;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Bebas Neue";
+  letter-spacing: 20px;
+  font-size: 45px;
+}
+
+p {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+/* Header */
+/* MAIN */
+.tarjeta {
+  background-color: rgba(227, 251, 253, 0.904);
+  border: 2px solid black;
+  padding-left: 2px;
+  text-align: center;
+  width: 250px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.div.card {
+  width: 250px;
+  height: 400px;
+}
+
+div.card-body {
+  padding: 0px;
+}
+$var1: 100%;
+$var2: 50%;
+$ancho: 200px;
+$alto: 200px;
+.imagenesMain {
+  width: ($var1)+ (18%);
+  margin-left: -15px;
+  object-fit: contain;
+  height: ($alto)+ (50px);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-radius: 0.25rem;
+}
+
+.tarjetaHombres {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 400px;
+  padding: 0px;
+}
+
+.card-body.hombres {
+  padding: 10px;
+  margin: 5px;
+}
+
+.imagenesHombres {
+  height: 250px;
+}
+
+/* Main */
+/* FOOTER */
+.footer__footer--bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(blue),
+    to(skyblue)
+  );
+  background-image: linear-gradient(to bottom, rgba(9, 255, 0, 0.295), skyblue);
+  width: 100%;
+  height: 400px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.footer__div--alineacion {
+  text-align: center;
+  width: 600px;
+  height: 250px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.col-lg-3 {
+  padding-left: 0px;
+}
+
+.img1 {
+  border: 2px solid black;
+  width: 250px;
+  height: ($alto)+ (221px);
+}
+
+/* Footer */
+section.row.div__section__mujeres--margin {
+  margin: 20px;
+}
+section.row.div__section__niños--margin {
+  margin: 20px;
+}
+
+section.row.div__section__hombres--margin {
+  margin: 20px;
+  margin-top: 50px;
+}
+.footer__p--size {
+  font-size: 20px;
+}
+
+a.btn.btn-primary {
+  display: block;
+}
+.card-text {
+  text-align: center;
+}
+.card-title {
+  text-align: center;
+}
+.card{
+  border: 1px solid black;
+
+}
+.formulario{
+  text-align: center;
+  background-color:#cefbcf;
+  border:2px solid black;
+  border-radius:1%;
+  margin: 20px;
+  padding: 5px;
+
+
+}
+// _m-buttons.scss
+$buttons: (
+  error: (#ef2929, rgb(255, 255, 255)),
+  warning: (#990000, #fff),
+  success: (#009225, #fff),
+  
+);
+$borde:1%;
+
+.m-button {
+  display: inline-block;
+  padding: .5em;
+  background: #ccc;
+  color: #666;
+  
+  
+  @each $name, $colors in $buttons {
+    $bgcolor: nth($colors, 1);
+    $fontcolor: nth($colors, 2);
+    
+    
+    
+    
+    
+    &--#{$name} {
+      background-color: $bgcolor;
+      color: $fontcolor;
+      border-radius: $borde;
+      width: $ancho;
+      
+    }  
+  }
+}
+.section__hombres--alineacion{
+  margin: 20px;
+    margin-top: 50px;
+  display: flex;
+    justify-content: flex-end;
+}
+.formularioHombre{
+  background: indianred;
+    width: 300px;
+    height: 400px;
+}
+
+.inputHombres{
+  
+margin: 10px;
+}
+.cuadroHombres{
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+
+}
+.listaHombre{
+  border: 2px solid black;
+  width: 310px;
+    height: 400px;
+    border: 2px solid black;
+}
+.tituloHombres{
+  text-align: center;
+  font-size: 40px;
+}
+.div__Hombres--center{
+  text-align: center;
+}
+.tarjetasArriba{
+  margin-top: 60px;
+  height: 400px;
+}
+.tarjetasMedio{
+  height: 400px;
+}
+.tarjetasAbajo{
+  height: 400px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+.bg-light{
+background-color: black!important;
+}
+.btn-outline-success{
+  border-color: white;
+  color: white;
+}
