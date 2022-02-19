@@ -308,7 +308,7 @@ background-color: black!important;
     margin: 5px;
   }
   .card{
-    width: 100%;
+    width: 95%;
     height: 400px;
     margin: 5px;
   }
@@ -334,4 +334,50 @@ background-color: black!important;
   .div__imagenes{
     width: 100%;
   }
+  .section__hombres--alineacion{
+    text-align: center;
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width:768px){
+  .header--widht{
+    width: 100%;
+  }
+  .header__h1--animacion{
+    width: 100%;
+  }
+  .form-inline{
+    width: 50%;
+  }
+  .form-control{
+    width: 70% !important;
+  }
+  .header__h1--animacion {
+    
+    font-size: 180%;
+    letter-spacing: 10px;
+}
+.card{
+  width: 200px;
+}
+.img1{
+  width: 100%;
+  height: 200px;
+}
+section.row.div__section__hombres--margin{
+  display: flex;
+  flex-direction: column;
+}
+.div__seccion__productos--width{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  margin-top: 5px;
+}
+.imagenesMain{
+  width: 105%;
+}
 }
