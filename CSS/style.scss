@@ -116,7 +116,7 @@ $alto: 200px;
     from(blue),
     to(skyblue)
   );
-  background-image: linear-gradient(to bottom, rgba(9, 255, 0, 0.295), skyblue);
+  background-image:linear-gradient(to bottom, rgba(109, 109, 109, 0.295), rgb(253, 254, 255));
   width: 100%;
   height: 400px;
   -webkit-box-orient: horizontal;
@@ -181,7 +181,7 @@ a.btn.btn-primary {
 }
 .formulario{
   text-align: center;
-  background-color:#cefbcf;
+  background-image:linear-gradient(to bottom, rgba(109, 109, 109, 0.295), rgb(253, 254, 255));
   border:2px solid black;
   border-radius:1%;
   margin: 20px;
@@ -189,11 +189,21 @@ a.btn.btn-primary {
 
 
 }
+.header {
+  color: #36A0FF;
+  font-size: 27px;
+  padding: 10px;
+}
+
+.bigicon {
+  font-size: 35px;
+  color: #36A0FF;
+}
 // _m-buttons.scss
 $buttons: (
-  error: (#ef2929, rgb(255, 255, 255)),
-  warning: (#990000, #fff),
-  success: (#009225, #fff),
+  error: (#000000, rgb(255, 255, 255)),
+  warning: (#000000, #fff),
+  success: (#000000, #fff),
   
 );
 $borde:1%;
@@ -308,9 +318,10 @@ background-color: black!important;
     margin: 5px;
   }
   .card{
-    width: 95%;
+    width: 100%;
     height: 400px;
-    margin: 5px;
+    margin-bottom: 5px;
+    
   }
   .imagenesMain{
     width: 113%;
@@ -319,7 +330,8 @@ background-color: black!important;
     margin: 5px;
   }
   section.row.div__section__niños--margin{
-    margin: 5px;
+    margin-top: 5px;
+    
   }
   .footer__footer--bg{
     background-image:linear-gradient(to bottom, rgba(109, 109, 109, 0.295), rgb(253, 254, 255)); 
@@ -339,6 +351,18 @@ background-color: black!important;
     display: flex;
     margin: 5px;
     justify-content: center;
+  }
+  a.btn.btn-primary{
+    margin: 3%;
+  }
+  .media__mujeres--width{
+    width: 100%;
+  }
+  .media__niños--width{
+    width: 100%;
+  }
+  #imagenLista{
+    display: none;
   }
 }
 
@@ -370,6 +394,23 @@ background-color: black!important;
 section.row.div__section__hombres--margin{
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+section.row.div__section__mujeres--margin{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+section.row.div__section__niños--margin{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .div__seccion__productos--width{
   display: flex;
@@ -378,6 +419,249 @@ section.row.div__section__hombres--margin{
   margin-top: 5px;
 }
 .imagenesMain{
-  width: 105%;
+  width: 115%;
 }
+.div__media__tablet{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 5px
+}
+.media__mujeres--width{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.media__niños--width{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.footer__footer--bg{
+  display: flex;
+}
+.footer__div--alineacion{
+  width: 300px;
+}
+a.btn.btn-primary{
+  margin: 3%;
+}
+
+.section__hombres--alineacion{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#imagenLista{
+  height: 400px;
+  margin-top: 60px;
+  
+  margin-left: 15%;
+}
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+  .card{
+    width: 32%;
+    height: 400px;
+    margin: 5px;
+  }
+  section.row.div__section__hombres--margin{
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+  }
+  section.row.div__section__mujeres--margin{
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+  }
+  section.row.div__section__niños--margin{
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+  }
+  .div__media__tablet{
+    display: flex;
+    width: 74%;
+  }
+  .media__mujeres--width{
+    display: flex;
+    width: 74%;
+  }
+  .media__niños--width{
+    display: flex;
+    width: 74%;
+  }
+  a.btn.btn-primary{
+    margin: 3%;
+  }
+  .footer__div--alineacion{
+    width: 50%;
+  }
+  .section__hombres__caja{
+    display: flex;
+    margin-left: 5px;
+    
+  }
+  #imagenLista{
+    height: 400px;
+    margin-top: 60px;
+    
+    margin-left: 25%;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+  .card{
+    width: 31%;
+    margin-right: 30px;
+    height: 415px;
+  }
+  .div__media__tablet{
+    display: flex;
+    width: 80%;
+  }
+  section.row.div__section__hombres--margin{
+    display: flex;
+    justify-content: space-between;
+  }
+  section.row.div__section__mujeres--margin{
+    display: flex;
+    justify-content: space-between;
+  }
+  section.row.div__section__niños--margin{
+    display: flex;
+    justify-content: space-between;
+  }
+  .media__mujeres--width{
+    display: flex;
+    width: 80%;
+  }
+  .media__niños--width{
+    display: flex;
+    width: 80%;
+  }
+  a.btn.btn-primary{
+    margin: 5%;
+  }
+  #imagenLista{
+    margin-top: 60px;
+    margin-left: 30%;
+  }
+  .div__Hombres--center{
+    margin-left: 20px;
+  }
+}
+.cuerpo__contacto{
+  background: #343a40;
+  color: #fff;
+  line-height: 1.6;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0 1.5em;
+}
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
+
+.logo span {
+  color: #B70E21;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+.contact-form {
+  background: #222222;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-form form label {
+  display: block;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form .block {
+  grid-column: 1 / 3;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #343a40;
+}
+
+.contact-form form button {
+    background: #343a40;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #343a40;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+/* CONTACT INFO */
+.contact-info {
+  background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+/* LARGE SIZE */
+@media(min-width: 700px) {
+  .cuerpo__contacto{
+      padding: 0 4em;
+  }
+  .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+      padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+      text-align: left;
+  }
+}
+#boton{
+  width: 30%;
+}
+.footer__contacto{
+  background-image: linear-gradient( transparent, transparent);
 }

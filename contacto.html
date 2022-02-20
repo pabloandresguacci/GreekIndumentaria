@@ -17,7 +17,7 @@
     <title>GREEK INDUMENTARIA - contacto</title>
 </head>
 
-<body>
+<body class="cuerpo__contacto">
     <!-- Header -->
     <header class="header--widht">
       <h1 class="header__h1--animacion">GREEK INDUMENTARIA</h1>
@@ -78,57 +78,59 @@
     <!-- Header -->
     <!-- Main -->
     <main>
-        <section>
-            <article>
-                <form class=" formulario">
-                    <fieldset>
-                        <a name="aqui">
-                            <h2>FORMULARIO DE CONTACTO</h2>
-                        </a>
-                        <label for="Nombre">Nombre &nbsp; &nbsp;</label>
-                        <input type="text" name="nombre" placeholder="Inserte su nombre">
-                        <br>
-                        <br>
-                        <label for="apellido">Apellido &nbsp; &nbsp; </label>
-                        <input type="text" name="apellido" placeholder="Inserte su apellido">
-                        <br>
-                        <br>
-                        <label for="correo electronico">E-mail &nbsp; &nbsp;</label>
-                        <input type="email" name="email" placeholder="inserte su email">
-                        <br>
-                        <br>
-                        <label for="telefono">Telefono  &nbsp; &nbsp;</label>
-                        <input type="tel" name="telefono" placeholder="ingrese su numero de celular">
-                        <br>
-                        <br>
-                        <label for="fecha de nacimiento">fecha de nacimiento &nbsp; &nbsp; </label>
-                        <input type="date" name="edad">
-                        <br>
-                        <br>
-                        <label for="Sexo">Sexo &nbsp; &nbsp; </label>
-                        <select name="Sexo">
-            <option value="M">Masculino</option>
-            <option value="F">Femenino</option>
-            <option value="O">Otro</option>
-        </select>
-                        <br>
-                        <br>
-                        <label for="msg">comentario</label><br>
-                        <textarea name="comentario" cols="30" rows="10" placeholder="deje su comentario"></textarea>
-                        <div>desea recibir nuestro newsletter
-                            <input type="checkbox" name="acepta" value="1">
-                        </div>
-                        <input type="submit" value="enviar" class="m-button--success">
-                        <input type="reset" value="borrar formulario" class="m-button--warning">
-                        <input type="reset" value="volver atras" class="m-button--error">
-                    </fieldset>
+      <div class="content">
+
+        <h1 class="logo">CONTACTO</h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>CONTACTO CON NOSOTROS</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                      <label>Apellido</label>
+                      <input type="text" name="affair">
+                  </p>
+                    <p>
+                        <label>Email </label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Nro Telefono</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    
+                    <p class="block">
+                       <label>Message</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
                 </form>
-            </article>
-        </section>
+            </div>
+            <div class="contact-info">
+                <h4>Mas Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Ubicacion</li>
+                    <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
+                    <li><i class="fas fa-envelope-open-text"></i> email@gmail.com</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                <p>GreekIndumentaria.com</p>
+            </div>
+        </div>
+
+    </div>
     </main>
     <!-- Main -->
     <!-- Footer -->
-    <footer class="container-fluid footer__footer--bg">
+    <footer class="container-fluid footer__contacto footer__footer--bg">
         <div class="row footer__div--alineacion">
           <ul class="col-lg-3 contactoFooter">
             <h5>CONTACTO</h5>
