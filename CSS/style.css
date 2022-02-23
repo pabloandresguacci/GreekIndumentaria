@@ -124,15 +124,6 @@ div.card-body {
   justify-content: space-around;
 }
 
-.footer__div--alineacion {
-  text-align: center;
-  width: 600px;
-  height: 250px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .col-lg-3 {
   padding-left: 0px;
 }
@@ -171,6 +162,7 @@ a.btn.btn-primary {
 
 .card-title {
   text-align: center;
+  font-size: 100%;
 }
 
 .card {
@@ -346,9 +338,21 @@ a.btn.btn-primary {
     margin-top: 5px;
   }
   .footer__footer--bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(109, 109, 109, 0.295)), to(#fdfeff));
     background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.295), #fdfeff);
     height: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer__div--alineacion {
     height: 50%;
@@ -418,6 +422,8 @@ a.btn.btn-primary {
     margin-top: 5px;
     margin-left: 0px;
     margin-right: 0px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   section.row.div__section__mujeres--margin {
     display: -webkit-box;
@@ -430,6 +436,8 @@ a.btn.btn-primary {
     margin-top: 5px;
     margin-left: 0px;
     margin-right: 0px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   section.row.div__section__niños--margin {
     display: -webkit-box;
@@ -442,6 +450,8 @@ a.btn.btn-primary {
     margin-top: 5px;
     margin-left: 0px;
     margin-right: 0px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .div__seccion__productos--width {
     display: -webkit-box;
@@ -506,7 +516,11 @@ a.btn.btn-primary {
     display: flex;
   }
   .footer__div--alineacion {
-    width: 300px;
+    width: 50%;
+  }
+  .footer__div--alineacion1 {
+    width: 50%;
+    text-align: center;
   }
   a.btn.btn-primary {
     margin: 3%;
@@ -541,6 +555,12 @@ a.btn.btn-primary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -550,6 +570,12 @@ a.btn.btn-primary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -559,6 +585,12 @@ a.btn.btn-primary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -598,6 +630,31 @@ a.btn.btn-primary {
     margin-top: 60px;
     margin-left: 25%;
   }
+  .footer__footer--bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+  }
+  .footer__div--alineacion1 {
+    text-align: center;
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__div--alineacion {
+    text-align: center;
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -611,6 +668,7 @@ a.btn.btn-primary {
     display: -ms-flexbox;
     display: flex;
     width: 80%;
+    margin-left: 5px;
   }
   section.row.div__section__hombres--margin {
     display: -webkit-box;
@@ -619,6 +677,11 @@ a.btn.btn-primary {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   section.row.div__section__mujeres--margin {
     display: -webkit-box;
@@ -627,6 +690,11 @@ a.btn.btn-primary {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   section.row.div__section__niños--margin {
     display: -webkit-box;
@@ -635,18 +703,25 @@ a.btn.btn-primary {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .media__mujeres--width {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 80%;
+    margin-left: 5px;
   }
   .media__niños--width {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 80%;
+    margin-left: 5px;
   }
   a.btn.btn-primary {
     margin: 5%;
@@ -657,6 +732,33 @@ a.btn.btn-primary {
   }
   .div__Hombres--center {
     margin-left: 20px;
+  }
+  .footer__div--alineacion {
+    text-align: center;
+    width: 50%;
+    height: 250px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .footer__div--alineacion1 {
+    text-align: center;
+    width: 50%;
+    height: 250px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .footer__footer--bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
   }
 }
 
