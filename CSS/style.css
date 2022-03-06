@@ -102,6 +102,26 @@ div.card-body {
   border-top: 1px solid black;
 }
 
+.distintivoHombre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#00000059), to(white));
+  background-image: linear-gradient(to left, #00000059, white);
+  margin: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+}
+
 /* Main */
 /* FOOTER */
 .footer__footer--bg {
@@ -171,20 +191,11 @@ a.btn.btn-primary {
 
 .card-title {
   text-align: center;
+  font-size: 100%;
 }
 
 .card {
   border: 1px solid black;
-}
-
-.formulario {
-  text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(109, 109, 109, 0.295)), to(#fdfeff));
-  background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.295), #fdfeff);
-  border: 2px solid black;
-  border-radius: 1%;
-  margin: 20px;
-  padding: 5px;
 }
 
 .header {
@@ -343,7 +354,7 @@ a.btn.btn-primary {
     margin: 5px;
   }
   section.row.div__section__niños--margin {
-    margin-top: 5px;
+    margin: 5px;
   }
   .footer__footer--bg {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(109, 109, 109, 0.295)), to(#fdfeff));
@@ -534,13 +545,15 @@ a.btn.btn-primary {
   .card {
     width: 32%;
     height: 400px;
-    margin: 5px;
+    margin-left: 5px;
   }
   section.row.div__section__hombres--margin {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -550,6 +563,8 @@ a.btn.btn-primary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -559,6 +574,8 @@ a.btn.btn-primary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -603,7 +620,6 @@ a.btn.btn-primary {
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .card {
     width: 31%;
-    margin-right: 30px;
     height: 415px;
   }
   .div__media__tablet {
@@ -611,6 +627,11 @@ a.btn.btn-primary {
     display: -ms-flexbox;
     display: flex;
     width: 80%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   section.row.div__section__hombres--margin {
     display: -webkit-box;
@@ -619,6 +640,9 @@ a.btn.btn-primary {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-left: 5px;
   }
   section.row.div__section__mujeres--margin {
     display: -webkit-box;
@@ -627,6 +651,9 @@ a.btn.btn-primary {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-left: 5px;
   }
   section.row.div__section__niños--margin {
     display: -webkit-box;
@@ -635,18 +662,31 @@ a.btn.btn-primary {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-left: 5px;
   }
   .media__mujeres--width {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 80%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .media__niños--width {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 80%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   a.btn.btn-primary {
     margin: 5%;
