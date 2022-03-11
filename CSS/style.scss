@@ -77,11 +77,11 @@ $var2: 50%;
 $ancho: 200px;
 $alto: 200px;
 .imagenesMain {
-  width: ($var1)+ (18%);
+  width: 227px;
   margin-left: -15px;
-  object-fit: contain;
+  object-fit: unset;
   height: ($alto)+ (50px);
- 
+  margin:auto;
   border-radius: 0.25rem;
 }
 
@@ -318,7 +318,7 @@ background-color: black!important;
     
   }
   .imagenesMain{
-    width: 113%;
+    
   }
   section.row.div__section__mujeres--margin{
     margin: 5px;
@@ -420,7 +420,7 @@ section.row.div__section__niños--margin{
   margin-top: 5px;
 }
 .imagenesMain{
-  width: 115%;
+  
 }
 .div__media__tablet{
   display: flex;

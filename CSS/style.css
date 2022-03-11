@@ -74,11 +74,12 @@ div.card-body {
 }
 
 .imagenesMain {
-  width: 118%;
+  width: 227px;
   margin-left: -15px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: unset;
+     object-fit: unset;
   height: 250px;
+  margin: auto;
   border-radius: 0.25rem;
 }
 
@@ -328,9 +329,6 @@ a.btn.btn-primary {
     height: 400px;
     margin-bottom: 5px;
   }
-  .imagenesMain {
-    width: 113%;
-  }
   section.row.div__section__mujeres--margin {
     margin: 5px;
   }
@@ -465,9 +463,6 @@ a.btn.btn-primary {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 5px;
-  }
-  .imagenesMain {
-    width: 115%;
   }
   .div__media__tablet {
     display: -webkit-box;
